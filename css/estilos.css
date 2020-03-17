@@ -70,9 +70,10 @@ h3 {
   padding: 30px;
 }
 
-.row {
+.row { /* descentralizado */
   content: "";
-  display: table;
+  display: flex;
+  justify-content: center;
   clear: both;
 }
 
