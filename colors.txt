@@ -1,0 +1,6 @@
+laranja: #EE751A
+azul: #0771B8
+branco: #FFFFFF
+
+font:
+- poetsenone regular

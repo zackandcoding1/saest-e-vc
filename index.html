@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+    <title>SAEST e Você</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <!-- Chrome / Opera / Firefox -->
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="theme-color" content="#CC4D38">
+      <link rel="icon" type="image/png" sizes="192x192" href="img/icon.png">
+      <!-- Google+ / Schema.org -->
+      <meta itemprop="name" content="SAEST e Você — Rádio Web UFPA">
+      <meta itemprop="description" content="O Núcleo de Altos Estudos Amazônicos (NAEA) é uma das unidades acadêmicas da Universidade Federal do Pará (UFPA). Fundado em 1973, com sede em Belém, Pará, Brasil, o NAEA tem como objetivos fundamentais o ensino em nível de pós-graduação, visando em particular a identificação, a descrição, a análise, a interpretação e o auxílio na solução dos problemas regionais amazônicos; a pesquisa em assuntos de natureza socioeconômica relacionados com a região; a intervenção na realidade amazônica, por meio de programas e projetos de extensão universitária; e a difusão de informação, por meio da elaboração, do processamento e da divulgação dos conhecimentos científicos e técnicos disponíveis sobre a região. O NAEA desenvolve trabalhos priorizando a interação entre o ensino, a pesquisa e a extensão.">
+      <!--<meta itemprop="image" content="facom-40/assets/share.png">-->
+      <link rel="publisher" href="https://plus.google.com/101267451866566642680">
+      <!-- Facebook / Open Graph -->
+      <meta property="fb:admins" content="283746138360443">
+      <meta property="og:url" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="SAEST e Você — Rádio Web UFPA">
+      <!--<meta property="og:image" content="facom-40/assets/share.png">-->
+      <meta property="og:description" content="O Núcleo de Altos Estudos Amazônicos (NAEA) é uma das unidades acadêmicas da Universidade Federal do Pará (UFPA). Fundado em 1973, com sede em Belém, Pará, Brasil, o NAEA tem como objetivos fundamentais o ensino em nível de pós-graduação, visando em particular a identificação, a descrição, a análise, a interpretação e o auxílio na solução dos problemas regionais amazônicos; a pesquisa em assuntos de natureza socioeconômica relacionados com a região; a intervenção na realidade amazônica, por meio de programas e projetos de extensão universitária; e a difusão de informação, por meio da elaboração, do processamento e da divulgação dos conhecimentos científicos e técnicos disponíveis sobre a região. O NAEA desenvolve trabalhos priorizando a interação entre o ensino, a pesquisa e a extensão.">
+      <meta property="og:site_name" content="Rádio Web UFPA">
+      <meta property="og:locale" content="pt_BR">
+      <!-- Twitter -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@radiowebufpa">
+      <meta name="twitter:title" content="SAEST e Você — Rádio Web UFPA">
+      <meta name="twitter:description" content="O Núcleo de Altos Estudos Amazônicos (NAEA) é uma das unidades acadêmicas da Universidade Federal do Pará (UFPA). Fundado em 1973, com sede em Belém, Pará, Brasil, o NAEA tem como objetivos fundamentais o ensino em nível de pós-graduação, visando em particular a identificação, a descrição, a análise, a interpretação e o auxílio na solução dos problemas regionais amazônicos; a pesquisa em assuntos de natureza socioeconômica relacionados com a região; a intervenção na realidade amazônica, por meio de programas e projetos de extensão universitária; e a difusão de informação, por meio da elaboração, do processamento e da divulgação dos conhecimentos científicos e técnicos disponíveis sobre a região. O NAEA desenvolve trabalhos priorizando a interação entre o ensino, a pesquisa e a extensão.">
+      <!--<meta property="twitter:image:src" content="facom-40/assets/share.png">-->
+    <!--Scripts-->
+    <script src="js/headroom.js" type="text/javascript"></script>
+    <script src="js/jquery-2.2.1.min.js" type="text/javascript"></script>
+</head>
+  
+<body>
+
+<header role="banner" id="header" class="color-1 slide slide--reset headroom--top">
+    	<button id="menu-button" onclick="openMenu();" title="Menu">Menu</button>
+    	<a href="/" id="logo"></a>
+    	<button id="share-button" onclick="openShare();" title="Compartilhar">Compartilhar</button>
+    	<div class="layer-menu" onclick="closeMenu();"></div>
+    	<nav role="navigation">
+            <ul>
+               <!-- <p>Rádio Web UFPA</p> -->
+               <li><a href="http://radio.ufpa.br/" class="icon-web" target="_blank">Rádio Web UFPA</a></li>
+               <li><a href="http://radio.ufpa.br/player" class="icon-play" target="_blank">Player</a></li>
+               <!-- <p>Especiais</p> -->
+               <span></span>
+               <li><a href="http://radio.ufpa.br/listao" class="icon-star">Listão Vestibular</a></li>
+               <li><a href="http://radio.ufpa.br/sintonize-ufpa" class="icon-star">Sintonize UFPA</a></li>
+               <li><a href="http://radio.ufpa.br/projetos/facom-40-anos" class="icon-star">Facom 40 anos</a></li>
+               <li><a href="http://radio.ufpa.br/eleicao-ufpa" class="icon-star">Eleições na UFPA</a></li>
+               <li><a href="http://radio.ufpa.br/belem-400-anos" class="icon-star">Belém 400 anos</a></li>
+               <!--  
+                  <li><a href="http://radio.ufpa.br/eureka" class="icon-web" target="_blank">Eureka</a></li>
+                     <li><a href="http://radio.ufpa.br/ciencia-legal" class="icon-web" target="_blank">Ciência Legal</a></li> -->
+            </ul>
+         </nav>
+ </header>
+    
+ <div id="share-container">
+         <span>COMPARTILHE</span>
+         <div class="color-1">
+            <button onclick="closeShare()"></button>
+            <h4>SAEST e Você</h4>
+            <hr>
+            <a aria-label="Compartilhe por Email" href="mailto:?subject=40%20Anos%20Facom%20UFPA%20%E2%80%93%20R%C3%A1dio%20Web%20UFPA&amp;body=Link:%20http://radio.ufpa.br/projetos/naea-45-anos" class="icon-email" title="Compartilhe por Email">
+            <span>Email</span>
+            </a>
+            <a aria-label="Compartilhe no WhatsApp" href="whatsapp://send?text=NAEA 45 Anos %E2%80%93 http://radio.ufpa.br/projetos/naea-45-anos via R%C3%A1dio Web UFPA" class="icon-whatsapp" title="Compartilhe no WhatsApp" id="whatsapp">
+            <span>WhatsApp</span>
+            </a>
+            <a aria-label="Compartilhe no Facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://radio.ufpa.br/projetos/naea-45-anos" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" class="icon-facebook" title="Compartilhe no Facebook">
+            <span>Facebook</span>
+            </a>
+            <a aria-label="Compartilhe no Twitter" href="https://twitter.com/intent/tweet?url=http://radio.ufpa.br/projetos/naea-45-anos/&amp;text=45%20Anos%20NAEA%20UFPA&amp;via=RadioWebUFPA" onclick="window.open(this.href, 'twitter-share', 'width=550,height=280');return false;" class="icon-twitter" title="Compartilhe no Twitter">
+            <span>Twitter</span>
+            </a>
+            <a aria-label="Compartilhe no Google Plus" href="https://plus.google.com/share?url=http://radio.ufpa.br/projetos/naea-45-anos" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" class="icon-googleplus" title="Compartilhe no Google+">
+            <span>Google+</span>
+            </a>
+            <a aria-label="Compartilhe no Pinterest" href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());" class="icon-pinterest" title="Compartilhe no Pinterest">
+            <span>Pinterest</span>
+            </a>
+         </div>
+      </div>
+
+<section class="full-screen">
+	 <div class="screen-container-logo img-logo">
+		<a href="#sobre" id="scroll-button-logo" class="color-1"></a>
+	 </div>
+ </section>
+ 
+ <section class="full-screen">
+	 <div id="sobre">
+		<h2><strong>O QUE É?</strong></h2>
+		<p id="description">É um programa semanal de 60 minutos de duração, que possui como objetivo dar visibilidade às ações de serviços prestados pela SAEST (Superintendência de Assistência Estudantil) da UFPA. Entrevistando convidados para tirar as maiores dúvidas dos alunos sobre seus direitos e serviços à sua disposição.</p>
+      <a href="#programas" id="scroll-button-sobre" class="color-1"></a>
+   </div>
+ </section>
+ 
+ 
+   <section>
+      <div class="full-screen" id="programas">
+         <h2><strong>OUÇA O PROGRAMA</strong></h2>
+         <div class="row">
+            <div id="player">
+               <h4><i class="material-icons">equalizer</i> Rádio Web UFPA</h4>
+               <div class="card">
+                  <div class="card-image">
+                     <a href="#" class="btn-floating btn-large halfway-fab">
+                           <i class="material-icons" id="play-pause">play_arrow</i>
+                     </a>
+                  </div>
+                  <div class="card-content">
+                     <h5>Title</h5>
+                     <p class="description">Description</p>
+                     
+                     <div class="row valign-wrapper">
+                           <a href="#">
+                              <i class="material-icons" id="previous">skip_previous</i>
+                           </a>
+                           <div class="col s2" id="current-duration">00:00</div>
+                           <div class="col s6 range-filed valign-wrapper">
+                              <input type="range" min="0" max="0" id="seekbar" step="1" />
+                           </div>
+                           <div class="col s2" id="total-duration">00:00</div>
+                           <a href="#">
+                              <i class="material-icons" id="skip">skip_next</i>
+                           </a>
+                           <div>
+                              <a href="#" class="">
+                                 <i class="material-icons" id="mute">volume_up</i>
+                              </a>
+                           </div>
+                           <div class="col s3 range-filed valign-wrapper">
+                              <input id="vol-control" type="range" min="0" max="100" step="1">
+                           </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="full-screen">
+      <footer id="contato" class="color-2">
+         <footer class="color-2">
+            <div class="block">
+				   <h3>Contato</h3>
+				   <div class="icons">
+					  <a class="action contact icon-email" href="mailto:radio@ufpa.br" title="Email">radio@ufpa.br</a> <br>
+					  <a class="action contact icon-phone" href="tel:+55(91)32018814" title="Telefone">+55 (91) 3201-8814</a>
+				   </div>
+            </div>
+            <div class="block">
+               <h3>Redes Sociais</h3>
+               <div class="icons">
+                  <a class="social icon-facebook" href="https://facebook.com/radiowebufpa" target="_blank" title="Facebook"></a>
+                  <a class="social icon-twitter" href="https://twitter.com/radiowebufpa" target="_blank" title="Twitter"></a>
+                  <a class="social icon-instagram" href="https://instagram.com/radiowebufpa/" target="_blank" title="Instagram"></a>
+                  <a class="social icon-tunein" href="https://tunein.com/radio/Radio-Web-UFPA-s169051/" target="_blank" title="TuneIn"></a><br>
+                  <a class="social icon-spotify" href="https://open.spotify.com/user/radioufpa" target="_blank" title="Spotify"></a>
+                  <a class="social icon-youtube" href="https://youtube.com/radiowebufp4" target="_blank" title="YouTube"></a>
+                  <a class="social icon-mixcloud" href="https://mixcloud.com/radioweb" target="_blank" title="MixCloud"></a>
+               </div>
+            </div>
+            
+            <div class="block">
+               <h3>Endereço</h3>
+               <a class="action local icon-local" href="https://goo.gl/maps/KJwPF8PDQFm" target="_blank" title="Endereço">Rua Augusto Corrêa, 01<br> ILC UFPA - Belém, PA<br> 66075-110</a>
+            </div>
+            <div class="copy">
+               <span>© 2019 Rádio Web UFPA. Todos os direitos reservados.</span>
+            </div>
+         </footer>
+      </footer>
+   </section>
+   <script src="js/index.js" type="module"></script>
+	<script src="js/functions.js" type="text/javascript"></script>
+</body>
+</html>
