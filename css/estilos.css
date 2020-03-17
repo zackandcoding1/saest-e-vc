@@ -535,7 +535,6 @@ footer {
   /*float: left;*/
   width: 92%;
   height: auto;
-  background-color: #1B4F06;
   color: #F2F2F2;
   text-align: center;
 }
@@ -1177,10 +1176,6 @@ h2 {
 	color: #EE751A;
 	padding: 48px;
 }
-
-/*body {
-	background-image: url();
-}*/
 
 body p {
 	font: 500 18px 'Montserrat', Arial, sans-serif;
