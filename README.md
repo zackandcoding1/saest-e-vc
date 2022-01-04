@@ -1,3 +1,5 @@
 ### SAEST e Você
 
-Audio files can be found at: http://radio.ufpa.br/index.php/acervo/
+Versão final do projeto: http://radio.ufpa.br/projetos/saest-e-voce/
+
+Arquivos de áudio podem ser encontrados em: http://radio.ufpa.br/index.php/acervo/
