@@ -194,9 +194,9 @@ legend {
   white-space: normal; 
 }
 
-textarea {
-  /* aplica scroll em colunas >>> overflow: auto; */
-}
+/* textarea {
+  aplica scroll em colunas >>> overflow: auto;
+} */
 
 [type="checkbox"],
 [type="radio"] {

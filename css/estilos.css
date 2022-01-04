@@ -100,7 +100,7 @@ h3 {
     text-align: center;
     margin-left: 2%;
     margin-right: 5%;
-    margin-top: 4%;
+    margin-top: 8%;
     top: 10px;
     overflow: auto;
 }
@@ -109,7 +109,7 @@ h3 {
   display: table-cell;
   vertical-align: inherit;
   max-width: 500px;
-  padding: 12px 0;
+  padding: 12px;
   margin: 0 auto;
   height: auto;
   font-size: 0;
@@ -208,9 +208,8 @@ h3 {
 }
 
 p {
-  font: 400 18px 'Open Sans', Arial, sans-serif;
+  font: 400 16px 'Open Sans', Arial, sans-serif;
   line-height: 1.6em;
-  text-align: justify;
   max-width: 660px;
   margin: 0 auto;
   padding: 10px 20px;
@@ -265,30 +264,29 @@ section {
 }
 
 #sobre {
-  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0px 40px 0px;
+  padding: 0px 0px 0px 0px;
   color: #f2f2f2;
 }
 
 #sobre p {
   margin-bottom: 0;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 #pgm {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /*padding-top: 20px;
+  padding-bottom: 20px;*/
 }
 
-#pgm h2 {
+/*#pgm h2 {
   margin-bottom: 20px;
-}
+}*/
 
 #pgm img {
   width: 100%;
@@ -379,7 +377,7 @@ header nav {
   height: 100%;
   overflow-x: auto;
   padding: 0;
-  margin: 0 0 0 -20px;
+  margin: 0 0 0 0px;
   -webkit-transform: translate3d(-280px,0,0);
   transform: translate3d(-280px,0,0);
   -webkit-transition: -webkit-transform 0.4s;
@@ -454,7 +452,7 @@ header nav span {
 }
 
 .screen-container-logo {
-  padding: 16rem 0 18rem;
+  padding: 8rem 0 36rem 32rem;
   display: table-cell;
   vertical-align: middle;
 }
@@ -526,7 +524,7 @@ footer {
   padding: 16px 4% 8px;
   display: inline-block;
   /*float: left;*/
-  width: 92%;
+  width: 100%;
   height: auto;
   color: #F2F2F2;
   text-align: center;
@@ -613,12 +611,9 @@ footer .local {
 .full-screen {
   padding: 0;
   display: table;
-  height: 100%;
   width: 100%;
   background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .auto-screen {
@@ -637,23 +632,6 @@ footer .local {
   display: table-cell;
   vertical-align: middle;
 }
-
-/*.full-screen {
-  display: table;
-  height: 100%;
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  padding: 0;
-}
-.full-screen-container {
-  display: table-cell;
-  vertical-align: middle;
-  padding: 48px 0;
-  font-size: 0;
-}*/
 
 /* Float Button */
 
@@ -760,6 +738,10 @@ footer .local {
     background-image: url("../ui/download.svg");
 }
 
+audio {
+  width: 90%;
+}
+
 .card-audio {
     position: relative;
     display: inline-block;
@@ -844,6 +826,109 @@ footer .local {
     border-style: solid;
     border-width: 12px 0 12px 21px;
     border-color: transparent transparent transparent #fff;
+}
+
+/* Card */
+
+#pgm .card {
+  float: left;
+  margin: 1px;
+  padding: 10px 70px;
+  width: calc( 100%  5 - 10px);
+}
+
+#play .card {
+	margin-left: 150px;
+}
+
+.card {
+  float: none;
+  display: inline-block;
+  width: 95%;
+  max-width: 1200px;
+  height: auto;
+  margin: 32px auto;
+  padding: 0 2.5%;
+  font-size: 0;
+}
+
+.card a {
+  position: relative;
+  display: inline-block;
+  /*float: left;*/
+  margin: 12px 10px;
+  padding: 0;
+  text-align: center;
+  border: 0;
+  height: 360px;
+  width: 100%;
+  max-width: 240px;
+  border-radius: 10px;
+  background-color: #fff;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+.card a:hover {
+	cursor: pointer;
+	background-color: rgba(228,228,228,1.00);
+}
+
+.card h3 {
+  position: relative;
+  float: left;
+  text-align: left;
+  margin: 16px;
+  padding: 0px;
+  font: 700 18px 'Open Sans', Arial, sans-serif;
+  transition: all 0.25s ease-in-out;
+  text-transform: none;
+  color: #1B4F06;
+}
+
+.card div {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 100%;
+  height: 240px;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+.card div:after {
+  content: "";
+  position: relative;
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.25s ease-in-out;
+  background-color: rgba(126, 126, 126, 0.100);
+}
+
+.card div:before {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 3;
+  transition: all 0.25s ease-in-out;
+  background-image: url(../ui/play_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 48px;
 }
 
 
@@ -1178,19 +1263,192 @@ footer .local {
 }
 
 h2 {
-	font: 500 24px 'Bebas Neue', Arial, sans-serif;
+	font: 500 24px 'Oswald', Arial, sans-serif;
 	font-weight: bold;
 	color: #EE751A;
-	padding: 48px;
+	padding: 32px;
 }
 
+/* Momento Saest - Player */
 body p {
 	font: 500 18px 'Montserrat', Arial, sans-serif;
-	padding: 12px;
+	padding: 40px;
 	text-align: center;
 	color: #ffffff;
+  border-radius: 10px;
 	background-color: #0771B8;
 }
+
+#programetes audio {
+  width: 40%;
+}
+
+.container {
+  width: 100vw;
+  height: 135vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+}
+
+#playlist{
+  list-style: none;
+  position: absolute;
+  margin-top: 20px;
+  top: 200px;
+  text-align: left;
+}
+
+#playlist li {
+  padding: 5px;
+  border-bottom: solid 1px #ccc;
+}
+
+#playlist li:hover {
+  background: #eee;
+  border-bottom: solid 1px #f60;
+}
+
+#playlist a {
+  text-decoration: none;
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#playlist li a{
+  color:black;
+  text-decoration: none;
+}
+
+#playlist .current-song a{
+  font-weight: bold;
+}
+
+.active a {
+  color: #f60;
+  padding-left: 1px;
+  font-weight: bold;
+}
+
+/* Carousel Slider */
+
+ /* Slideshow container */
+ .slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  border-radius: 30px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 60px;
+  text-align: center;
+}
+
+.mySlides span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+  font: 400 22px 'Open Sans', Arial, sans-serif;
+  padding: 0;
+  letter-spacing: 4px;
+}
+
+.mySlides h3 {
+  font: 700 18px 'Montserrat', Arial, sans-serif;
+  text-align: center;
+  max-width: 720px;
+  margin: 28px auto;
+  padding: 12px 18px;
+}
+
+.mySlides p {
+  font-size: 16px;
+}
+
+/* botões Next & Previous */
+
+.prev {
+  left: 0px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posiciona o botão "next" para a direita */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #0771B8;
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 10px 0 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.cover-1 { background-image: url("../img/cover-1.jpg"); }
+.cover-2 { background-image: url("../img/cover-1.jpg"); }
+.cover-3 { background-image: url("../img/cover-2.jpg"); }
+.cover-4 { background-image: url("../img/cover-3.jpg"); }
+.cover-5 { background-image: url("../img/cover-4.jpg"); }
+.cover-6 { background-image: url("../img/cover-5.jpg"); }
+.cover-7 { background-image: url("../img/cover-6.jpg"); }
+.cover-8 { background-image: url("../img/cover-7.jpg"); }
+.cover-9 { background-image: url("../img/cover-8.jpg"); }
+.cover-10 { background-image: url("../img/cover-9.jpg"); }
+.cover-11 { background-image: url("../img/cover-3.jpg"); }
+.cover-12 { background-image: url("../img/cover-10.jpg"); }
+.cover-13 { background-image: url("../img/cover-1.jpg"); }
+.cover-14 { background-image: url("../img/cover-1.jpg"); }
+.cover-15 { background-image: url("../img/cover-11.jpg"); }
+.cover-16 { background-image: url("../img/cover-12.jpg"); }
+.cover-17 { background-image: url("../img/cover-3.jpg"); }
 
 .icon-play { background-image: url('../ui/play.svg'); }
 .icon-radio { background-image: url('../ui/radio.svg'); }
@@ -1375,11 +1633,10 @@ body p {
 #scroll-button-sobre {
   position: absolute;
   display: inline-block;
-  margin: 0 auto;
-  padding: 0;
+  margin: 8px auto;
+  padding: 0px;
   left: 0;
   right: 0;
-  bottom:   -20px;
   width: 48px;
   height: 48px;
   background-size: 48px;
@@ -1447,9 +1704,12 @@ section {
   overflow-x: auto;
 }
 
-/* Media Queries 
+/*Media Queries */
 
 @media screen and (max-width: 1400px) {
+  #pgm .card {
+    padding: 10px 3px;
+  }
 
   .card a {
     max-width: 220px;
@@ -1470,16 +1730,10 @@ section {
 }
 
 @media screen and (max-width: 1024px) {
-	#sobre h2 {
-		margin-left: 360px;
-	}
-	
-	#sobre p {
-		margin-left: -70px;
-		padding: 0 200px;
-		font-size: 14px;
-	}
-	
+  #pgm .card {
+    padding: 10px 3px;
+  }
+
 	iframe {
     	width: 480px;
     	height: 320px;
@@ -1487,6 +1741,9 @@ section {
 }
 
 @media screen and (max-width: 900px) {
+  #pgm .card {
+    padding: 10px 3px;
+  }
 
   footer .block {
     width: 100%;
@@ -1498,15 +1755,12 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-	#sobre h2 {
-		margin-left: 220px;
-	}
+  #pgm .card {
+    padding: 10px 3px;
+  }
 	
 	#sobre p {
-		margin-left: 20px;
-		padding: 0 50px;
-		font-size: 14px;
-		width: 70%;
+		width: 80%;
 	}
 
 	footer #contato {
@@ -1520,6 +1774,9 @@ section {
 }
 
 @media screen and (max-width: 600px) {
+  #pgm .card {
+    padding: 10px 3px;
+  }
 
   p, .featured-text {
   	font-size: 16px;
@@ -1539,8 +1796,8 @@ section {
 	}
 	.card a {
 		margin: 10px 2%;
-	    max-width: 46%;
-	    height: 268px;
+	  max-width: 46%;
+	  height: 268px;
 	}
 	.card div {
 		height: 150px;
@@ -1601,9 +1858,17 @@ section {
   footer p {
     font-size: 14px;
   }
+
+  #programetes audio {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 425px) {
+  #pgm .card {
+    padding: 10px 3px;
+  }
+
   .modal-audio div {
       max-width: 200px;
     }
@@ -1622,29 +1887,17 @@ section {
   }
 
   #logo {
-    margin-left: 102px;
-  }
-
-  #menu-button {
-    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #share-button {
-    padding-left: 100px;
+    padding-left: 50px;
   }
 
   #sobre h2 {
     font-size: 24px;
-    margin-left: 10%;
-  }
-
-  #sobre p {
-    margin-left: -20px;
-    width: 70%;
-  }
-
-  #sobre p {
-    font-size: 14px;
   }
 
   #pgm h2,
@@ -1657,13 +1910,16 @@ section {
     height: 80px;
   }
   
-  audio {
-    width: 140px;
-    height: 30px;
+  #programetes audio {
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 375px) {
+  #pgm .card {
+    padding: 10px 3px;
+  }
+
   .modal-audio div {
       max-width: 200px;
     }
@@ -1682,29 +1938,17 @@ section {
   }
 
   #logo {
-    margin-left: 90px;
-  }
-
-  #menu-button {
-    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #share-button {
-    padding-left: 100px;
+    padding-left: 50px;
   }
 
   #sobre h2 {
-    font-size: 24px;
-    margin-left: 7%;
-  }
-
-  #sobre p {
-    margin-left: -30px;
-    width: 70%;
-  }
-
-  #sobre p {
-    font-size: 14px;
+    font-size: 24px
   }
 
   #pgm h2,
@@ -1712,18 +1956,21 @@ section {
     font-size: 24px;
   }
   
-  	iframe {
-    	width: 160px;
-    	height: 80px;
-  	}
+  iframe {
+    width: 160px;
+    height: 80px;
+  }
   
-  audio {
-    width: 140px;
-    height: 30px;
+  #programetes audio {
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 320px) {
+  #pgm .card {
+    padding: 10px 3px;
+  }
+
 	.modal-audio div {
     	max-width: 200px;
   	}
@@ -1741,46 +1988,35 @@ section {
 		font-size: 10px;
 	}
 	
-	#logo {
-		margin-left: 60px;
-	}
+  #logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-  	#menu-button {
-    	margin-left: -20px;
-  	}
+  #share-button {
+    padding-left: 50px;
+  }
 
-  	#share-button {
-    	padding-left: 100px;
-  	}
+  #sobre h2 {
+    font-size: 24px;
+  }
 
-  	#sobre h2 {
-    	font-size: 24px;
-    	margin-left: 1%;
-  	}
+  #sobre p {
+    font-size: 16px;
+  }
 
-  	#sobre p {
-    	margin-left: -30px;
-    	width: 65%;
-  	}
-
-  	#sobre p {
-    	font-size: 14px;
-  	}
-
-  	#pgm h2,
+  #pgm h2,
 	#play h2 {
-    	font-size: 24px;
-  	}
+    font-size: 24px;
+  }
 	
-  	iframe {
-    	width: 160px;
-    	height: 80px;
-  	}
+  iframe {
+    width: 160px;
+    height: 80px;
+  }
   
-	audio {
-		width: 140px;
-		height: 30px;
-	}
+  #programetes audio {
+    width: 70%;
+  }
 }
-
-*/
